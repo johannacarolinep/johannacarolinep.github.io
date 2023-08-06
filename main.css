@@ -85,6 +85,5 @@ body, html {
   }
 
   .scrollable {
-    width: 50%;
-    height: 50%;
+    max-height: 400px
   }
