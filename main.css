@@ -2,24 +2,22 @@ body {
     background-color: rgb(245, 241, 236);
     font-family: sans-serif;
     color:darkslategray;
+}
 
+body, html {
+    height: 100%;
+    margin: 0;
 }
 
 /* The hero image */
 .hero-image {
   /* Set a specific height */
   height: 50%;
-
   /* Position and center the image to scale nicely on all screens */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-}
-
-#hero-image {
-    filter: blur(8px);
-  -webkit-filter: blur(8px);
 }
 
 /* Place text in the middle of the image */
@@ -30,6 +28,10 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
+}
+
+#hero-image {
+    width:100%;
 }
 
 /* Create a top navigation bar with a black background color  */
@@ -61,6 +63,28 @@ body {
     color: white;
   }
 
-  .image {
-    width: 100%;
+  .btn {
+    border: none; /* Remove borders */
+    color: rgb(0, 0, 0); /* Add a text color */
+    padding: 14px 28px; /* Add some padding */
+    cursor: pointer; /* Add a pointer cursor on mouse-over */
+  }
+
+  .default {background-color: #000000; color: rgb(255, 255, 255);} /* Gray */
+  .default:hover {background: #4c4b4b;}
+
+  div.scroll-container {
+    background-color: #333;
+    overflow: auto;
+    white-space: nowrap;
+    padding: 10px;
+  }
+  
+  div.scroll-container img {
+    padding: 10px;
+  }
+
+  .scrollable {
+    width: 50%;
+    height: 50%;
   }
