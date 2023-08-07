@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(245, 241, 236);
+    background-color: rgb(255, 253, 251);
     font-family: sans-serif;
     color:darkslategray;
 }
@@ -7,6 +7,24 @@ body {
 body, html {
     height: 100%;
     margin: 0;
+}
+
+.beige-box {
+    width: 80%;
+    background-color: rgb(255, 253, 251);
+    height: auto;
+    padding: 15px;
+    margin-left:auto;
+    margin-right:auto;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+.white-box {
+    background-color: white;
+    height: auto;
+    padding: 15px;
+    margin-top: 10px;
 }
 
 /* The hero image */
@@ -24,10 +42,16 @@ body, html {
 .hero-text {
   text-align: center;
   position: absolute;
-  top: 50%;
+  top: 90%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: white;
+  color: rgb(0, 0, 0);
+  background-color: rgb(255, 253, 251);
+  padding-left: 10%;
+  padding-right: 10%;
+  width: 50%;
+  font-size: 20px;
+  text-transform: uppercase;
 }
 
 #hero-image {
@@ -86,4 +110,16 @@ body, html {
 
   .scrollable {
     max-height: 400px
+  }
+
+  footer {
+    background-color: #000000;
+    color: white;
+    padding: 8px;
+    text-align: right;
+    margin-top: 20px;
+  }
+
+  .block-inline {
+    display: inline;
   }
